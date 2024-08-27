@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -10,77 +17,86 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/css/style.css">
 
-    <title>ComplejoTurismo</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+
+    <title>Complejo Turismo</title>
   </head>
 
   <body>
     <!-- Inicio Componente navbar -->
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          FullStack Travels <i class="bi bi-airplane-engines"></i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
+
+    <div class="hero-img">
+      <h1>Viaja con nosotros, tenemos los mejores precios del mercado</h1>
+      <button>Reserva ahora!</button>
     </div>
-    <h1>COMPLEJO DE TURISMO FULLSTACK</h1>
+
     <!-- INICIO CARRUSEL -->
-    <div class="container">
+    <h2 class="h2">¡Redescubre nuestro país a través de sus experiencias!</h2>
+    <div class="container mb-5">
       <div
         id="carouselExampleInterval"
         class="carousel slide"
@@ -91,7 +107,7 @@
             <!--data-bs-interval="3000"> Aqui se configura e intervalo de cada imagen en la trancicion  -->
             <img
               src="./assets/img/puerto-natales_1.jpg"
-              class="d-block w-100"
+              class="custom-carousel-img"
               alt="..."
             />
             <!-- alt="..."> Aqui se configura el nombre descriptivo de las imagenes  -->
@@ -99,35 +115,35 @@
           <div class="carousel-item" data-bs-interval="3000">
             <img
               src="./assets/img/puerto-natales_2.jpg"
-              class="d-block w-100"
+              class="custom-carousel-img"
               alt="..."
             />
           </div>
           <div class="carousel-item" data-bs-interval="3000">
             <img
               src="./assets/img/puerto-natales_3.jpg"
-              class="d-block w-100"
+              class="custom-carousel-img"
               alt="..."
             />
           </div>
           <div class="carousel-item" data-bs-interval="3000">
             <img
               src="./assets/img/puerto-natales_4.jpg"
-              class="d-block w-100"
+              class="custom-carousel-img"
               alt="..."
             />
           </div>
           <div class="carousel-item" data-bs-interval="3000">
             <img
               src="./assets/img/puerto-natales_5.jpg"
-              class="d-block w-100"
+              class="custom-carousel-img"
               alt="..."
             />
           </div>
           <div class="carousel-item" data-bs-interval="3000">
             <img
               src="./assets/img/puerto-natales_6.jpg"
-              class="d-block w-100"
+              class="custom-carousel-img"
               alt="..."
             />
           </div>
@@ -152,9 +168,114 @@
         </button>
       </div>
     </div>
+
     <!-- Fin carrusel -->
 
-    <!-- Footer -->
+
+    <!-- inicio cards -->
+    <div class="container">
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Torres del Paine</h5>
+          <p class="card-text">
+            Ubicado en la Región de Magallanes, el Parque Nacional Torres del
+            Paine es uno de los destinos más icónicos de la Patagonia chilena.
+            Conocido por sus impresionantes torres de granito, lagos turquesa y
+            glaciares majestuosos, el parque ofrece oportunidades excepcionales
+            para el senderismo, la observación de vida silvestre y la
+            fotografía. Destaca el circuito W, que brinda vistas panorámicas de
+            los picos de las Torres y el glaciar Grey. También puedes explorar
+            el Valle del Francés y el Lago Nordenskjöld. La diversidad de
+            paisajes y la belleza natural hacen de este parque un paraíso para
+            los amantes de la naturaleza.
+          </p>
+          <p class="card-text"><small class="text-body-secondary"></small></p>
+          <a
+            href="https://es.wikipedia.org/wiki/Parque_nacional_Torres_del_Paine"
+            class="card-link"
+          >
+            Mas información
+          </a>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Punta Arenas</h5>
+          <p class="card-text">
+            Situada en el extremo sur de Chile, Punta Arenas es la puerta de
+            entrada a la Antártida y la región de Magallanes. Explora su rica
+            historia en el Museo Regional, disfruta de la vista desde el mirador
+            del Cerro de la Cruz y visita la Plaza Muñoz Gamero. La ciudad
+            también ofrece excursiones a la Isla Magdalena para observar
+            pingüinos y es el punto de partida para explorar la impresionante
+            región patagónica.
+          </p>
+          <p class="card-text"><small class="text-body-secondary"></small></p>
+          <a
+            href="https://es.wikipedia.org/wiki/Punta_Arenas"
+            class="card-link"
+          >
+            Mas información
+          </a>
+        </div>
+        <img
+          src="assets/img/puertoNatales.jpeg"
+          class="card-img-bottom"
+          alt="..."
+        />
+      </div>
+      <div class="card mb-3">
+        <div class="card-body">
+          <img
+            src="assets/img/pucón-imagen.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <h5 class="card-title">Pucón</h5>
+          <p class="card-text">
+            Ubicada a orillas del Lago Villarrica y con vistas al Volcán
+            Villarrica, Pucón es el destino perfecto para los amantes de la
+            aventura. Ofrece una variedad de actividades al aire libre como
+            esquí, snowboard, rafting y senderismo. La ciudad también cuenta con
+            una animada vida nocturna y una oferta gastronómica diversa. No te
+            pierdas la oportunidad de relajarte en sus termas naturales.
+          </p>
+          <p class="card-text"><small class="text-body-secondary"></small></p>
+          <a href="https://es.wikipedia.org/wiki/Puc%C3%B3n" class="card-link">
+            Mas informacón
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Puerto Natales</h5>
+          <p class="card-text">
+            Puerta de entrada al Parque Nacional Torres del Paine, Puerto
+            Natales es un pintoresco puerto en la Patagonia chilena. Disfruta de
+            su encantador centro histórico, con arquitectura de influencia
+            europea y una vibrante escena gastronómica. Aprovecha su ubicación
+            para explorar las impresionantes vistas del Fiordo Última Esperanza
+            y embarcarte en excursiones hacia el Parque Nacional.
+          </p>
+          <p class="card-text"><small class="text-body-secondary"></small></p>
+          <a
+            href="https://es.wikipedia.org/wiki/Puerto_Natales"
+            class="card-link"
+          >
+            Mas información
+          </a>
+        </div>
+        <img
+          src="assets/img/puertoNatales.jpeg"
+          class="card-img-bottom"
+          alt="..."
+        />
+      </div>
+    </div>
+    <!-- fin de cards -->
+
+    <!-- Inicio footer -->
+  
     <footer>
       <div class="container">
           <div class="row">
@@ -186,11 +307,15 @@
   </div>
   
 
-    <script src="./assets/js/script.js"></script>
+    
+    <!-- fin footer -->
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
