@@ -1,0 +1,41 @@
+.hero-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+  background: url('/assets/img/puerto-natales_1.jpg') center / cover no-repeat;
+}
+
+.hero-img h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.hero-img button {
+  padding: 10px 0;
+  width: 150px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 25px;
+  color: white;
+}
+
+.container {
+  margin-bottom: 50px;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 800px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
