@@ -1,9 +1,7 @@
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "eslint.validate": [
-    "javascript",
-    "html"
-  ],
-  "liveServer.settings.port": 5502
+  "eslint.validate": ["javascript", "html"],
+  "liveServer.settings.port": 5501
 }
+
