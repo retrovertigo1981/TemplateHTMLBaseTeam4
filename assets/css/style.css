@@ -1,0 +1,88 @@
+footer {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.list-inline {
+    list-style: none;
+    padding: 0;
+}
+
+.list-inline-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.list-inline-item a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.list-inline-item a:hover {
+    color: #007bff;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);  
+
+}
+
+.modal-content {
+    
+    background: rgb(9,121,117);
+    background: linear-gradient(90deg, rgba(9,121,117,1) 0%, rgba(9,121,117,1) 8%, rgba(1,193,243,1) 50%, rgba(9,121,117,1) 100%);
+    text-align: center;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    display: block;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 80%;
+    margin: 10px 0;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.btnStyle{
+    background-color: #007bff;
+    color: white;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
