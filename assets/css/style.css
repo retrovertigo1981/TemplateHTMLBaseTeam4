@@ -1,3 +1,13 @@
+.custom-carousel-img {
+  width: 900px; /* Ajusta el ancho de la imagen */
+  height: 500px; /* Ajusta la altura de la imagen */
+  object-fit: cover; /* Mantiene el aspecto de la imagen y la recorta si es necesario */
+}
+
+.carousel-item {
+  text-align: center; /* Centra la imagen en el contenedor */
+}
+
 .hero-img {
   display: flex;
   align-items: center;
@@ -26,16 +36,3 @@
   color: white;
 }
 
-.container {
-  margin-bottom: 50px;
-}
-
-.carousel-inner {
-  width: 100%;
-  height: 800px;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: auto;
-}
